@@ -40,7 +40,7 @@
 
 <div *ngIf="!logged" class="experience-item">
     <div class="logo-div">
-        <div><p>{{experience.logoUrl}}</p></div>
+        <img [src]="experience.logoUrl" alt="logoUrl">
     </div>
     <div class="datos-div">
         <p><b>Empresa: </b>{{experience.enterprise}}</p>

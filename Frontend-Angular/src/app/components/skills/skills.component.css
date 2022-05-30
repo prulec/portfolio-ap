@@ -26,7 +26,7 @@
 
 #title > .arrows-div {
     position: absolute;
-    right: 85px;
+    left: 35px;
     top: calc(50% - 18px);
     width: 36px;
     height: 36px;

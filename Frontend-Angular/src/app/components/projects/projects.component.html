@@ -2,6 +2,7 @@
     <div></div>
     <h2>PROYECTOS</h2>
     <div
+        *ngIf="logged"
         [ngClass]="{'one-column': oneColumn}"
         class="arrows-div"
         (click)="toggleOneColumn()"
