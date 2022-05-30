@@ -1,1 +1,1 @@
-export const BACKEND_URL = "http://192.168.246.187:8080/"
+export const BACKEND_URL = "https://argprog-portfolio.herokuapp.com/"

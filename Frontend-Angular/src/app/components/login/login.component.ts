@@ -71,6 +71,7 @@ export class LoginComponent implements OnInit {
       error: (e) => {
         this.logged = false;
         this.loginFail = true;
+        if (e.status === 400) this.errorMessage = "The username doesn't exists...";
         if (e.status === 401) this.errorMessage = "Incorrect credentials...";
         else console.log(e);
       }
