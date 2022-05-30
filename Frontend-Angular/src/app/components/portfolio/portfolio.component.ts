@@ -41,7 +41,10 @@ export class PortfolioComponent implements OnInit {
         if (data!=null) {
           this.portfolio = data;
           this.router.navigate([this.portfolioName]);
-        } else console.log(this.portfolioName + ": NO DATA!");
+        } else {
+          console.log(this.portfolioName + ": NO DATA!");
+          this.router.navigate(['/']);
+        }
       });
     }
   }
