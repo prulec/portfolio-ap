@@ -54,7 +54,7 @@ export class PortfolioService {
   }
 
   getSocialTypes(): Observable<SocialType[]> {
-    return this.http.get<SocialType[]>(this.baseUrl + "socialtypes/list");
+    return this.http.get<SocialType[]>(this.baseUrl + "socialtype/list");
   }
 
   changeOrderItem(orderData: OrderData): Observable<string> {
