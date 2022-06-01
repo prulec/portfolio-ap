@@ -98,6 +98,8 @@ app-edit-item {
 #job-title-div > h2 {
     font-size: 24px;
     margin-bottom: 0px;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 #job-title-div > .pencil-div {

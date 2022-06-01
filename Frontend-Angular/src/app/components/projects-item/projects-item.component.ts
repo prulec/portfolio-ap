@@ -61,4 +61,8 @@ export class ProjectsItemComponent implements OnInit {
     this.projectGalleryVisible = true;
   }
 
+  goTo(url:string){
+    window.open(url,"_blank");
+  }
+
 }

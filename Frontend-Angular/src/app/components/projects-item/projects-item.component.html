@@ -21,7 +21,7 @@
         <div class="datos-div">
             <p><b>Nombre: </b>{{project.name}}</p>
             <p><b>Fecha: </b>{{project.projectTime}}</p>
-            <p><b>Link: </b>{{project.link}}</p>
+            <p><b>Link: </b><span (click)="goTo(project.link)">{{project.link}}</span></p>
             <p><b>Descripción: </b>{{project.description}}</p>
         </div>
     </div>
@@ -75,7 +75,7 @@
         <div class="datos-div">
             <p><b>Nombre: </b>{{project.name}}</p>
             <p><b>Fecha: </b>{{project.projectTime}}</p>
-            <p><b>Link: </b>{{project.link}}</p>
+            <p><b>Link: </b><span (click)="goTo(project.link)">{{project.link}}</span></p>
             <p><b>Descripción: </b>{{project.description}}</p>
         </div>
     </div>

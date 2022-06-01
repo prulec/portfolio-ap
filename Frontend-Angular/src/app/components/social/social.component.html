@@ -75,7 +75,7 @@
         [src]="social.socialTypeData.iconUrl"
     >
 </div>
-<div *ngIf="logged" id="openwindowbutton-div" (click)="openWindow()">
+<div *ngIf="logged" id="openwindowbutton-div" data-toggle="tooltip" title="Edit social" (click)="openWindow()">
     <div>
         <img 
             class="pencil" 

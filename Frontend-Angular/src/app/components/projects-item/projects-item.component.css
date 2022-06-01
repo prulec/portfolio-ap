@@ -59,6 +59,11 @@ app-project-gallery {
     word-break: break-word;
 }
 
+.datos-div > p > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 /* EDIT ICONS */
 

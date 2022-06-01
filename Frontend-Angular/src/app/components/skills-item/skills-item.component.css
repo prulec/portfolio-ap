@@ -5,10 +5,11 @@
 .skills-item {
     display: flex;
     flex-direction: row;
+    padding: 0px 20px;
     border: #BFBFBF solid 2px;
     border-radius: 10px;
     background-color: var(--back-color);
-    justify-content: center;
+    justify-content: flex-start;
 
     --level: 0;
     --level-until-50: calc(var(--level) * 180deg / 50);
@@ -25,7 +26,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    flex: 0 0 120px;
     height: 120px;
     margin: 5px;
     border: #a3a3a3 solid 2px;
@@ -109,6 +110,13 @@
     align-items: center;
     justify-content: center;
     background-color: var(--back-color);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.level-text-div > p, h3 {
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .level-text-div > p {
@@ -138,8 +146,8 @@
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {
-    .progress-div {
-        width: 100px;
+    .progress-div {        
+        flex: 0 0 100px;
         height: 100px;
     }
 }

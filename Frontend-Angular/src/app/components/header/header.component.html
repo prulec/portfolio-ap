@@ -1,6 +1,7 @@
 <div id="header">
     <div id="banner-div">
-        <img id="banner-img" [src]="portfolio.bannerUrl" alt="Banner">
+        <img *ngIf="logged" id="banner-img" [src]="portfolio.bannerUrl" alt="Banner">
+        <img *ngIf="!logged" id="banner-img" [src]="portfolio.bannerUrl" alt="">
     </div>
     <div id="logos-div">
         <img id="arglogo-img" src="https://github.com/prulec/portfolio/raw/main/images/Assets/logo_argentina_programa.png" alt="ArgProg">
@@ -32,12 +33,14 @@
             >Log Out</button>
         </div>
         <p *ngIf="logged" id="username"><span id="user-span">{{portfolio.user.username}}</span></p>
-        <div *ngIf="logged" id="eye-div" [ngSwitch]="portfolio.visible" (click)="togglePortfolioVisibility()">
+        <div *ngIf="logged" id="eye-div" [ngSwitch]="portfolio.visible" data-toggle="tooltip" title="Visible on/off"
+                (click)="togglePortfolioVisibility()"
+        >
             <img *ngSwitchCase="true" id="eye-img" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Base-preview-open.png" alt="Visibility-icon">
             <img *ngSwitchCase="false" id="eye-img" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Base-preview-close-one.png" alt="Visibility-icon">
         </div>
     </div>
-    <div *ngIf="logged" id="bottom-right-div" (click)="openEditPopup()">
+    <div *ngIf="logged" id="bottom-right-div" data-toggle="tooltip" title="Edit banner" (click)="openEditPopup()">
         <img id="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
     </div>
     <app-edit-item
