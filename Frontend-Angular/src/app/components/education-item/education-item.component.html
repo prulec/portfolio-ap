@@ -4,8 +4,8 @@
         <img [src]="education.logoUrl" alt="logoUrl">
     </div>
     <div class="datos-div">
-        <p><b>Título/Certificación/Curso: </b>{{education.title}}</p>
-        <p><b>Período/Año: </b>{{education.educationTime}}</p>
+        <p><b>Título: </b><span>{{education.title}}</span></p>
+        <p><b>Año: </b>{{education.educationTime}}</p>
         <p><b>Institución: </b>{{education.institution}}</p>
     </div>
     <div *ngIf="logged" class="edit-div">
@@ -41,8 +41,8 @@
         <img [src]="education.logoUrl" alt="">
     </div>
     <div class="datos-div">
-        <p><b>Título/Certificación/Curso: </b>{{education.title}}</p>
-        <p><b>Período/Año: </b>{{education.educationTime}}</p>
+        <p><b>Título: </b><span>{{education.title}}</span></p>
+        <p><b>Año: </b>{{education.educationTime}}</p>
         <p><b>Institución: </b>{{education.institution}}</p>
     </div>
 </div>

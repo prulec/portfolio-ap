@@ -33,6 +33,12 @@
     word-break: break-word;
 }
 
+.datos-div > p > span {
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
 
 /* EDIT ICONS */
 

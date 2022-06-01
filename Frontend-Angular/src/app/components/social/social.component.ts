@@ -36,6 +36,7 @@ export class SocialComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.tokenService.isLogged()) this.logged = true;
+    this.getSocialTypes();
   }
 
   getSocialTypes(){
@@ -62,7 +63,6 @@ export class SocialComponent implements OnInit {
   }
 
   openAddForm() {
-    this.getSocialTypes();
     this.addVisible = true;
   }
 
