@@ -26,9 +26,9 @@ export class SocialComponent implements OnInit {
 
   /*
   Links íconos redes:
-  https://github.com/prulec/portfolio/raw/main/images/Assets/Facebook%20(logo).png
-  https://github.com/prulec/portfolio/raw/main/images/Assets/YouTube%20(logo).png
-  https://github.com/prulec/portfolio/raw/main/images/Assets/GitHub%20(logo).png
+  https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Facebook%20(logo).png
+  https://github.com/prulec/portfolio-ap/raw/main/images/Assets/YouTube%20(logo).png
+  https://github.com/prulec/portfolio-ap/raw/main/images/Assets/GitHub%20(logo).png
   */
 
   constructor(private portfolioService:PortfolioService,

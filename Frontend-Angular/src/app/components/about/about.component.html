@@ -9,7 +9,7 @@
                 <div *ngIf="logged" class="pencil-div" data-toggle="tooltip" title="Edit photo"
                         (click)="openEditPopup(editPhotoUrlTitle)"
                 >
-                    <img class="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
+                    <img class="pencil" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
                 </div>
                 <app-edit-item
                     *ngIf = "editPhotoUrlVisible"
@@ -21,7 +21,7 @@
             <div id="person-name-div" data-toggle="tooltip" title="Edit Fullname">
                 <h1>{{portfolio.user.firstName}} {{portfolio.user.lastName}}</h1>
                 <div *ngIf="logged" class="pencil-div" (click)="openEditPopup(editFullnameTitle)">
-                    <img class="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
+                    <img class="pencil" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
                 </div>
                 <app-edit-item
                     *ngIf = "editFullnameVisible"
@@ -35,7 +35,7 @@
                 <div *ngIf="logged" class="pencil-div" data-toggle="tooltip" title="Edit job title"
                         (click)="openEditPopup(editJobTitleTitle)"
                 >
-                    <img class="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
+                    <img class="pencil" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
                 </div>
                 <app-edit-item
                     *ngIf = "editJobTitleVisible"
@@ -52,7 +52,7 @@
             <div *ngIf="logged" class="pencil-div" data-toggle="tooltip" title="Edit personal statement"
                     (click)="openEditPopup(editPStatementTitle)"
             >
-                <img class="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
+                <img class="pencil" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
             </div>
             <app-edit-item
                 *ngIf = "editPStatementVisible"

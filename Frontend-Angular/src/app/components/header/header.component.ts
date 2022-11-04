@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
   @Input() portfolio:Portfolio = PORTFOLIO;
   
   /*
-  portfolio.bannerUrl = https://github.com/prulec/portfolio/raw/main/images/Archive/astronaut3.png
+  portfolio.bannerUrl = https://github.com/prulec/portfolio-ap/raw/main/images/Archive/astronaut3.png
   */
 
   constructor(private portfolioService:PortfolioService,

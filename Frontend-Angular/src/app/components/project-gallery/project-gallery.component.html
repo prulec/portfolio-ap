@@ -4,10 +4,10 @@
             <img [src]="selectedImage.imageUrl" [alt]="selectedImage.title">
         </div>
         <div id="close-div" (click)="onClose()">
-            <img src="https://github.com/prulec/portfolio/raw/main/images/Assets/Operate-handle-x.png" alt="Close btn">
+            <img src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Operate-handle-x.png" alt="Close btn">
         </div>
         <div *ngIf="logged" id="add-div" (click)="openAddPopup()">
-            <img class="add-img" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Base-red-cross.png" alt="Add-icon">
+            <img class="add-img" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Base-red-cross.png" alt="Add-icon">
         </div>
         <app-add-item
             *ngIf = "addVisible"
@@ -21,7 +21,7 @@
         ></app-add-item>
         <div *ngIf="logged" class="edit-div">
             <div class="trash-div" (click)="openDelete()">
-                <img class="trash" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Base-delete.png" alt="Edit-icon">
+                <img class="trash" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Base-delete.png" alt="Edit-icon">
             </div>
             <app-delete-item
                 *ngIf="deleteVisible"
@@ -32,7 +32,7 @@
                 (onCancel)="closeDelete()"
             ></app-delete-item>
             <div class="pencil-div" (click)="openEdit()">
-                <img class="pencil" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
+                <img class="pencil" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Edit-write.png" alt="Edit-icon">
             </div>
             <app-edit-item
                 *ngIf="editVisible"
@@ -47,7 +47,7 @@
                 (click)="toggleChangeOrder()"
                 [ngClass]="{ 'changeOrderActivated' : changeOrderActivated }"
             >
-                <img class="arrows" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
+                <img class="arrows" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@
                     *ngIf="selectedImage===image && changeOrderActivated"
                     class="arrows-div"
                 >
-                    <img class="arrows" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
+                    <img class="arrows" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     *ngIf="selectedImage===image && changeOrderActivated"
                     class="arrows-div"
                 >
-                    <img class="arrows" src="https://github.com/prulec/portfolio/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
+                    <img class="arrows" src="https://github.com/prulec/portfolio-ap/raw/main/images/Assets/Arrows-sort.png" alt="Edit-icon">
                 </div>
             </div>
         </div>
